@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'jwt_auth',
     'rest_framework',
     'comments',
-    'recipes_app'
+    'recipes_app',
     'project',
 ]
 
