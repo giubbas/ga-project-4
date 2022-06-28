@@ -61,7 +61,7 @@ TEMPLATES = [
         'DIRS': [os.path.join(BASE_DIR, 'client')
         ]  #Look, we have added the root folder of frontend here
         ,
-        'APP_DIRS': False,
+        'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
