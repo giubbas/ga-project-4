@@ -38,10 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'recipes_app',
     'jwt_auth',
     'rest_framework',
     'comments',
+    'recipes_app',
+    'client',
 ]
 
 MIDDLEWARE = [
@@ -58,9 +59,7 @@ ROOT_URLCONF = 'project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'client')
-        ]  #Look, we have added the root folder of frontend here
-        ,
+        'DIRS': [os.path.join(BASE_DIR, 'client')],  #Look, we have added the root folder of frontend here
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
