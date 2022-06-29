@@ -145,4 +145,8 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'client', "build", "static"),
 )
 
+TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(__file__) ,'../templates').replace('\\','/')
+)
+
 django_on_heroku.settings(locals())
