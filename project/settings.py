@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'comments',
     'recipes_app',
-    'client',
 ]
 
 MIDDLEWARE = [
@@ -118,8 +117,6 @@ USE_I18N = True
 
 USE_TZ = True
 
-ROOT_URLCONF = 'project.urls'
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
@@ -139,6 +136,8 @@ REST_FRAMEWORK = {
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
+
+ROOT_URLCONF = 'project.urls' 
 
 STATIC_URL = '/static/'
 
