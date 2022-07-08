@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'comments',
     'recipes_app',
-    'project',
 ]
 
 MIDDLEWARE = [
@@ -120,15 +119,6 @@ USE_TZ = True
 
 ROOT_URLCONF = 'project.urls'
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.0/howto/static-files/
-
-STATIC_URL = '/static/'
-
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'client', 'build', 'static'),
-)
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
@@ -145,5 +135,14 @@ REST_FRAMEWORK = {
         'jwt_auth.authentication.JWTAuthentication'
     ]
 }
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/4.0/howto/static-files/
+
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'client', "build", "static"),
+)
 
 django_on_heroku.settings(locals())
