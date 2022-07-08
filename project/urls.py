@@ -15,12 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include, re_path 
-# from .views import index # <-- also new
+from .views import index # <-- also new
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/recipes/', include('recipes_app.urls')),
     path('api/auth/', include('jwt_auth.urls')),
     path('api/comments/', include('comments.urls')),
-    # re_path(r'^.*$', index)
+    re_path(r'^.*$', index)
 ]
