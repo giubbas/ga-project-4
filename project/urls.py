@@ -22,5 +22,5 @@ urlpatterns = [
     path('api/recipes/', include('recipes_app.urls')),
     path('api/auth/', include('jwt_auth.urls')),
     path('api/comments/', include('comments.urls')),
-    re_path(r'^.*$', index)
+    # re_path(r'^.*$', index)
 ]
