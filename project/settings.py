@@ -56,7 +56,7 @@ MIDDLEWARE = [
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'client')
+        'DIRS': [os.path.join(BASE_DIR, 'templates')
                  ]  #Look, we have added the root folder of frontend here
         ,
         'APP_DIRS': True,
