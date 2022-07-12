@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'jwt_auth',
     'recipes_app',
+    'jwt_auth',
     'comments',
 ]
 
