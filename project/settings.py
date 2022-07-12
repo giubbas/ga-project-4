@@ -37,12 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
     'jwt_auth',
-    'profiles',
-    'feedback',
-    'swipes',
-    'matches'
+    'rest_framework',
+    'comments',
+    'recipes_app',
 ]
 
 MIDDLEWARE = [
@@ -80,9 +78,9 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'shibr',
+        'NAME': 'recipes',
         'HOST': 'localhost',
-        'PORT': '5432'
+        'PORT': 5432
     }
 }
 
