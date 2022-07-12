@@ -37,10 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'jwt_auth',
     'rest_framework',
-    'comments',
-    'recipes_app',
+    'jwt_auth',
+    'profiles',
+    'feedback',
+    'swipes',
+    'matches'
 ]
 
 MIDDLEWARE = [
@@ -55,8 +57,7 @@ MIDDLEWARE = [
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'client')
-                 ]  #Look, we have added the root folder of frontend here
+        'DIRS': [os.path.join(BASE_DIR, 'client')]  #Look, we have added the root folder of frontend here
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -79,9 +80,9 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'recipes',
+        'NAME': 'shibr',
         'HOST': 'localhost',
-        'PORT': 5432
+        'PORT': '5432'
     }
 }
 
@@ -116,32 +117,34 @@ USE_I18N = True
 
 USE_TZ = True
 
-# Default primary key field type
-# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
-
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-AUTH_USER_MODEL = 'jwt_auth.User'
-
-REST_FRAMEWORK = {
-    'DEFAULT_RENDERER_CLASSES': [
-        'rest_framework.renderers.JSONRenderer',
-        'rest_framework.renderers.BrowsableAPIRenderer'
-    ],
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-        'jwt_auth.authentication.JWTAuthentication'
-    ]
-}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-ROOT_URLCONF = 'project.urls' 
+ROOT_URLCONF = 'project.urls'
 
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'client', 'build', 'static'),
 )
+
+
+# Default primary key field type
+# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'jwt_auth.User' 
+
+REST_FRAMEWORK = {
+  'DEFAULT_RENDERER_CLASSES': [
+    'rest_framework.renderers.JSONRenderer',
+    'rest_framework.renderers.BrowsableAPIRenderer'
+  ],
+  'DEFAULT_AUTHENTICATION_CLASSES': [
+    'jwt_auth.authentication.JWTAuthentication'
+  ]
+}
 
 django_on_heroku.settings(locals())
