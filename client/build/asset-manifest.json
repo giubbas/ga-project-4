@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.28e06aea.css",
+    "main.js": "/static/js/main.7c921bd0.js",
+    "static/media/logo-image.png": "/static/media/logo-image.02c3e912c7828d1407c7.png",
+    "static/media/home-plate.png": "/static/media/home-plate.fd0697be2f3e3464f7ab.png",
+    "static/media/grain.png": "/static/media/grain.7cdeb905b410cee626fb.png",
+    "static/media/legumes.png": "/static/media/legumes.3c92dc2de845d271e5d8.png",
+    "static/media/eggs.png": "/static/media/eggs.2af516873d6ff962a13d.png",
+    "static/media/meat.png": "/static/media/meat.c45c2b09bbb6caf2e179.png",
+    "static/media/vegetables.png": "/static/media/vegetables.1c4d5b5ba2d8a534daf0.png",
+    "static/media/tubers.png": "/static/media/tubers.47351c57874b293da6f0.png",
+    "static/media/fruit.png": "/static/media/fruit.c8ea0917ce8710acd33e.png",
+    "index.html": "/index.html",
+    "main.28e06aea.css.map": "/static/css/main.28e06aea.css.map",
+    "main.7c921bd0.js.map": "/static/js/main.7c921bd0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28e06aea.css",
+    "static/js/main.7c921bd0.js"
+  ]
+}

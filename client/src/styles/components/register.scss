@@ -1,0 +1,46 @@
+.register-section{
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    padding: 50px 70px;
+    background: white;
+    
+    img{
+      width: 230px;
+      align-self: center;
+      margin-bottom: 40px;
+    }
+
+    input{
+      margin-bottom: 40px;
+      padding: 15px 150px 15px 10px;
+      border: none;
+      border-bottom: 1px solid black;
+      font-size: 1em;;
+    }
+
+    input:focus{
+      outline: none;
+    }
+
+    button{
+      margin-top: 30px;
+      height: 40px;
+      background: $green;
+      border: none;
+      font-size: 1em;
+      border-radius: 25px;
+    }
+
+    button:hover{
+      cursor: pointer;
+    }
+  }
+}

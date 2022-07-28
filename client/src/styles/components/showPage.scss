@@ -1,0 +1,105 @@
+
+header{
+
+  width: 600px;
+  position: relative;
+  margin-top: 45px;
+
+  h1{
+    font-size: 2em;
+    font-weight: 700;
+  }
+}
+
+header :nth-child(2){
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h3{
+    font-size: 1.3em;
+    margin-bottom: 0px;
+
+    .header-user-icon{
+      font-size: 0.8em;
+      margin-right: 5px;
+    }
+  }
+
+  a{
+    font-size: 18px;
+    color: black;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  button{
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #DF7861;
+  }
+}
+
+.recipe-show{
+
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+
+  .image-wrapper{
+    width: 600px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    overflow: hidden;
+    background: white;
+
+    img{
+      width: 600px;
+    }
+  }
+
+  .box{
+    width: 400px;
+    height: 500px;
+    background: white;
+    border: 1px solid black;
+
+    li{
+      margin-top: 10px;
+    }
+
+    button{
+      width: 50%;
+      background: none;
+      border: none;
+      font-size: 1.2em;
+      padding: 3px 10px 3px 10px;
+      text-decoration: underline;
+      margin-bottom: 20px;
+    }
+
+    button:hover{
+      background: black;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:focus{
+      background: black;
+      color: white;
+    }
+
+    .method{
+      height: calc(100% - 54.8px);
+      padding: 20px;
+      overflow: scroll;
+    }
+  }
+}
+

@@ -1,0 +1,124 @@
+.home-page{ 
+  width: 100%;
+  height: calc(100vh - 141px);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+
+  .logo{
+    width: 470px;
+    margin-top: 7%;
+
+    .logo-image{
+      width: 390px;
+      height: 23%;
+      background-image: url('../assets/logo-image.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+
+    h2{
+      margin: 0 0 30px 0;
+      font-size: 2.2em;
+      font-weight: 400;
+    }
+
+    a{
+      border: 1px solid $green;
+      padding: 7px 70px 7px 70px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: black;
+      background: $green;
+    }
+  }
+}
+.home-page :last-child{
+  width: 580px;
+  height: 580px;
+  background-image: url('../assets/home-plate.png');
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+
+
+// Responsiveness
+@media only screen and (max-width: 1320px) {
+
+  .home-page{
+    width: 100%;
+    height: calc(100vh - 100px);
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .home-page :last-child{
+    width: 500px;
+    background-image: url('../assets/home-plate.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .home-page{
+    width: 100%;
+    height: calc(100vh - 100px);
+    justify-content: center;
+
+    .logo{
+      text-align: center;
+
+      .logo-image{
+        width: 390px;
+        height: 23%;
+        margin: auto;
+        background-image: url('../assets/logo-image.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+      }
+  
+      h2{
+        font-size: 1.9em;
+        font-weight: 300;
+      }
+    }
+    
+    .meal-img{
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .home-page{
+    height: calc(100vh - 236px);
+    margin-top: 150px;
+
+    .logo{
+      width: 100%;
+      text-align: center;
+  
+      .logo-image{
+        width: 350px;
+        height: 15%;
+        margin: auto;
+        background-image: url('../assets/logo-image.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+      }
+  
+      h2{
+        font-size: 1.7em;
+        font-weight: 300;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.comments-section {
+  margin: auto;
+  margin-top: 100px;
+}
+
+.comments-section .no-auth-comments p {
+  font-weight: 300;
+}
+
+.comments-section .no-auth-comments p a {
+  color: #5a4393;
+  font-weight: 400;
+}
+
+.comments-section form {
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 70px;
+}
+
+.comments-section form textarea {
+  height: 100px;
+  border-radius: 3px;
+  padding: 10px 10px 10px 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.comments-section form button {
+  width: 150px;
+  margin-top: 20px;
+  border-radius: 3px;
+  border: none;
+  background: black;
+  color: white;
+}
+
+.comments-section form button:hover {
+  cursor: pointer;
+}
+
+.comments-section h6 {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+.comments-section .comment-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.comments-section .comment-list .single-comment h5 {
+  margin-bottom: 0px;
+}
+
+.comments-section .comment-list .single-comment h5 .comments-user-icon {
+  margin-right: 5px;
+}
+
+.comments-section .comment-list .single-comment p:first-of-type {
+  font-size: 0.8em;
+  font-weight: 300;
+  margin-top: 3px;
+}
+
+.comments-section .comment-list .single-comment button {
+  width: 80px;
+  margin: 20px 0 20px 0;
+  border-radius: 3px;
+  border: 1px solid black;
+  background: none;
+}
+/*# sourceMappingURL=comments.css.map */

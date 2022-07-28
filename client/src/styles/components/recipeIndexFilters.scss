@@ -1,0 +1,98 @@
+.filters-wrapper{
+  padding: 0 10px 0 10px;
+  text-align: center;
+  margin-bottom: 40px;
+
+  div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .time-cook-section button{
+    width: 90px;
+    padding: 7px 0 7px 0;
+    background: $green;
+    border: none;
+    // border: 1px solid black;
+    border-radius: 3px;
+    color: white;
+  }
+
+  div:last-of-type{
+    margin-bottom: 50px;
+  }
+
+  hr{
+    margin: 30px 0 30px 0;
+    border: 1px solid $green;
+  }
+
+  .filters-timer-icon{
+    font-size: 40px;
+  }
+
+  .main-ingredient{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: transparent;
+    background-size: cover;
+    border: 3px solid $green;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .grain-btn{
+    background-image: url('../assets/grain.png');
+    background-size: 35px;
+  }
+
+  .meat-btn{
+    background-image: url('../assets/meat.png');
+  }
+
+  .vegetables-btn{
+    background-image: url('../assets/vegetables.png');
+  }
+
+  .fish-btn{
+    background-image: url('../assets/fish.png');
+  }
+
+  .tubers-btn{
+    background-image: url('../assets/tubers.png');
+  }
+
+  .fruit-btn{
+    background-image: url('../assets/fruit.png');
+  }
+
+  .eggs-btn{
+    background-image: url('../assets/eggs.png');
+    background-size: 35px;
+  }
+
+  .legumes-btn{
+    background-image: url('../assets/legumes.png');
+  }
+
+  .dairy-btn{
+    background-image: url('../assets/dairy.png');
+  }
+
+  .clear-filters{
+    padding: 10px 50px 10px 50px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    border: 1px solid black;
+  }
+
+  .clear-filters:hover{
+    background: white;
+    color: black;
+  }
+}

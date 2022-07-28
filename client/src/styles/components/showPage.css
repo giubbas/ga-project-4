@@ -1,0 +1,121 @@
+header {
+  width: 600px;
+  position: relative;
+  margin-top: 45px;
+}
+
+header h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+header :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header :nth-child(2) h3 {
+  font-size: 1.3em;
+  margin-bottom: 0px;
+}
+
+header :nth-child(2) h3 .header-user-icon {
+  font-size: 0.8em;
+  margin-right: 5px;
+}
+
+header :nth-child(2) a {
+  font-size: 18px;
+  color: black;
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header :nth-child(2) button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #DF7861;
+}
+
+.recipe-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+}
+
+.recipe-show .image-wrapper {
+  width: 600px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid black;
+  overflow: hidden;
+  background: white;
+}
+
+.recipe-show .image-wrapper img {
+  width: 600px;
+}
+
+.recipe-show .box {
+  width: 400px;
+  height: 500px;
+  background: white;
+  border: 1px solid black;
+}
+
+.recipe-show .box li {
+  margin-top: 10px;
+}
+
+.recipe-show .box button {
+  width: 50%;
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  padding: 3px 10px 3px 10px;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.recipe-show .box button:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.recipe-show .box button:focus {
+  background: black;
+  color: white;
+}
+
+.recipe-show .box .method {
+  height: calc(100% - 54.8px);
+  padding: 20px;
+  overflow: scroll;
+}
+/*# sourceMappingURL=showPage.css.map */

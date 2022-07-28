@@ -1,0 +1,117 @@
+.add-recipe-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  form{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    padding: 50px 70px;
+    margin: 40px 0 50px 0;
+    background: white;
+
+    label{
+      font-size: 1.1em;
+      margin-bottom: 3px;
+    }
+
+    input{
+      font-size: 1.1em;
+    }
+
+    input, textarea, select, .rti--container{
+      border-radius: 5px;
+      border: 1px solid lightgray;
+    }
+
+    .add-page-title{
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 3px;
+    }
+
+    .rti--container{
+      margin-bottom: 20px;
+      padding: 7px;
+
+
+
+      input{
+        padding: 0 5px;
+        border: none;
+      }
+
+      input:focus{
+        border: 1px solid lightgrey;
+      }
+
+      .rti--tag{
+        border: 1px solid lightgray;
+        padding: 0 3px 0 3px;
+        margin: 2px;
+        border-radius: 3px;
+        background: $purple;
+        font-size: 0.9em;
+
+        span{
+          margin-right: 5px;
+        }
+        button{
+          border-radius: 0px;
+          padding: 0 4px 0 4px;
+        }
+      }
+    }
+
+    button:hover{
+      background: black;
+      color: white;
+    }
+
+    textarea{
+      height: 100px;
+      padding: 10px;
+    }
+
+    textarea, select{
+      margin-bottom: 20px;
+    }
+
+    select{
+      margin-bottom: 20px;
+      height: 40px;
+      padding: 5px;
+    }
+
+    .image-upload{
+      font-size: 0.9em;
+    }
+
+    ::-webkit-file-upload-button {
+      border: none;
+      background: none;
+      border-right: 1px solid black;
+    }
+    ::-webkit-file-upload-button:hover{
+      cursor: pointer;
+    }
+  }
+
+  form input:last-of-type{
+    padding: 10px;
+    display: flex;
+  }
+
+  .add-recipe-btn{
+    margin-top: 40px;
+    height: 40px;
+    background: $green;
+    border: none;
+    font-size: 1em;
+    border-radius: 25px;
+  }
+}
