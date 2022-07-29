@@ -7,7 +7,7 @@ The purpose of this project was to build a Full-Stack application which was rout
 My idea was to create a recipes app in which you can read, post, update and delete data. 
 
 ## Project link
-link
+[Check out the site!](https://mealing-list.herokuapp.com/)
 
 ## Tech list
 #### Front-end
